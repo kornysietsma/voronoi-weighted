@@ -1,0 +1,11 @@
+[package]
+name = "voronoi-weighted"
+version = "0.1.0"
+authors = ["Korny Sietsma <korny@sietsma.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+approx = "0.3.2"
+[dev-dependencies]
