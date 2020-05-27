@@ -1,7 +1,7 @@
 #![warn(clippy::all)]
 #![allow(dead_code)]
 
-use super::edge::Edge;
+use super::horizon_edge::HorizonEdge;
 use super::vector::Vector;
 use super::vertex::Vertex;
 use std::rc::Rc;
@@ -11,7 +11,7 @@ pub struct Face {
     // conflicts: ConflictList<Vertex>
     marked: bool,
     vertexes: Vec<Vertex>,
-    edges: Vec<Edge>,
+    edges: Vec<HorizonEdge>,
     normal: Vector, // index: int; - ONLY IN JAVA!
                     // dualPoint: Option<Point2d>;
 }
